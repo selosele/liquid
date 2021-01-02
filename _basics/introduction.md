@@ -26,9 +26,9 @@ Liquid 코드는 [**객체**](#객체)와 [**태그**](#태그), [**필터**](#�
 
 ## 태그
 
-**태그**는 로직과 템플릿의 제어 흐름을 만들어내며, 중괄호와 퍼센트 기호로 표시됩니다: `{% raw %}{%{% endraw %}` and `{% raw %}%}{% endraw %}`.
+**태그**는 로직과 템플릿의 제어 흐름을 생성하며, 중괄호와 퍼센트 기호로 표시됩니다: `{% raw %}{%{% endraw %}` and `{% raw %}%}{% endraw %}`.
 
-마크업에 포함된 태그는 어떤 텍스트도 생성하지 않습니다. Liquid 로직을 페이지에 표시하지 않고도 변수를 할당하거나 조건문/반복문을 만들 수 있습니다.
+마크업에 포함된 태그는 어떤 가시적인 텍스트도 생성하지 않습니다. Liquid 로직을 페이지에 표시하지 않고도 변수를 할당하거나 조건문/반복문을 만들 수 있습니다.
 
 <p class="code-label">입력</p>
 ```liquid
@@ -44,17 +44,17 @@ Liquid 코드는 [**객체**](#객체)와 [**태그**](#태그), [**필터**](#�
 Hello Adam!
 ```
 
-Tags can be categorized into three types:
+태그는 세 가지 유형으로 분류됩니다.
 
-- [Control flow]({{ "/tags/control-flow/" | prepend: site.baseurl }})
-- [Iteration]({{ "/tags/iteration/" | prepend: site.baseurl }})
-- [Variable assignments]({{ "/tags/variable/" | prepend: site.baseurl }})
+- [제어 흐름]({{ "/tags/control-flow/" | prepend: site.baseurl }})
+- [반복문]({{ "/tags/iteration/" | prepend: site.baseurl }})
+- [변수 할당]]({{ "/tags/variable/" | prepend: site.baseurl }})
 
-You can read more about each type of tag in their respective sections.
+태그 유형에 대한 자세한 내용은 각 섹션에서 확인할 수 있습니다. 
 
 ## 필터
 
-**Filters** change the output of a Liquid object. They are used within an output and are separated by a `|`.
+**Filters**는 Liquid 객체의 출력 내용을 변경하며, 출력문 내부에서 `|` 기호로 구분됩니다.
 
 <p class="code-label">입력</p>
 ```liquid
@@ -68,7 +68,7 @@ You can read more about each type of tag in their respective sections.
 {{ "/my/fancy/url" | append: ".html" }}
 ```
 
-Multiple filters can be used on one output. They are applied from left to right.
+하나의 출력문 내에서 여러 필터가 사용될 수 있고, 왼쪽부터 오른쪽으로 적용됩니다.
 
 <p class="code-label">입력</p>
 ```liquid
