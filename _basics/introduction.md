@@ -1,6 +1,6 @@
 ---
-title: Introduction
-description: An overview of objects, tags, and filters in the Liquid template language.
+title: 소개
+description: Liquid 템플릿 언어의 객체와 태그, 필터에 대한 개요입니다.
 redirect_from: /basics/
 ---
 

@@ -1,4 +1,4 @@
-title: Liquid template language
+title: Liquid 템플릿 언어
 description: Liquid is a template language and accompanying rendering engine. It is built for security, so is perfect for rendering custom templates from your users.
 
 # Build settings
