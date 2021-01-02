@@ -7,7 +7,7 @@
     {% endif %}
   </header>
 
-  {%- assign sections = "기본, 태그, 필터" | split: ", " -%}
+  {%- assign sections = "기본, 태그, 필터" | split: ", " | url_decode -%}
 
   <nav class="sidebar__nav">
     <div class="sidebar__nav-interior">
