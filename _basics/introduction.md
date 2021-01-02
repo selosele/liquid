@@ -1,7 +1,7 @@
 ---
 title: 소개
 description: Liquid 템플릿 언어의 객체와 태그, 필터에 대한 개요입니다.
-redirect_from: /basics/
+redirect_from: /기본/
 ---
 
 Liquid code can be categorized into [**objects**](#objects), [**tags**](#tags), and [**filters**](#filters).
