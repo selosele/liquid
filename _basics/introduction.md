@@ -1,14 +1,16 @@
 ---
 title: 소개
-description: Liquid 템플릿 언어의 객체와 태그, 필터에 대한 개요입니다.
+description: Liquid 템플릿 언어의 객체와 태그, 필터에 대한 개요
 redirect_from: /basics/
 ---
 
-Liquid 코드는 [**객체**](#객체), [**태그**](#태그), and [**필터**](#필터)로 분류됩니다.
+Liquid 코드는 [**객체**](#객체)와 [**태그**](#태그), [**필터**](#필터)로 분류됩니다.
 
 ## 객체
 
 **Objects** tell Liquid where to show content on a page. Objects and variable names are denoted by double curly braces: `{% raw %}{{{% endraw %}` and `{% raw %}}}{% endraw %}`.
+
+**객체**는 페이지에서 내용을 표시할 위치를 Liquid에게 알려줍니다. 객체와 변수명은 이중 중괄호로 표시됩니다: `{% raw %}{{{% endraw %}` and `{% raw %}}}{% endraw %}`.
 
 <p class="code-label">입력</p>
 ```liquid
@@ -22,7 +24,7 @@ Liquid 코드는 [**객체**](#객체), [**태그**](#태그), and [**필터**](
 {{ page.title }}
 ```
 
-In this case, Liquid is rendering the content of an object called `page.title`, and that object contains the text `Introduction`.
+위 코드에서, Liquid는 `Introduction`이라는 텍스트를 담고 있는 `page.title` 객체의 내용을 렌더링하였습니다. 
 
 ## 태그
 
