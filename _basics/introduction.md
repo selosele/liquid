@@ -54,7 +54,7 @@ Hello Adam!
 
 ## 필터
 
-**Filters**는 Liquid 객체의 출력 내용을 변경하며, 출력문 내부에서 `|` 기호로 구분됩니다.
+**필터**는 Liquid 객체의 출력 내용을 변경하며, 출력문 내부에서 `|` 기호로 구분됩니다.
 
 <p class="code-label">입력</p>
 ```liquid
