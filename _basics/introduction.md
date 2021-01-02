@@ -17,7 +17,7 @@ Liquid 코드는 [**객체**](#객체)와 [**태그**](#태그), [**필터**](#�
 {% endraw %}
 ```
 
-<p class="code-label">결과</p>
+<p class="code-label">출력</p>
 ```text
 {{ page.title }}
 ```
@@ -39,7 +39,7 @@ Liquid 코드는 [**객체**](#객체)와 [**태그**](#태그), [**필터**](#�
 {% endraw %}
 ```
 
-<p class="code-label">결과</p>
+<p class="code-label">출력</p>
 ```text
 Hello Adam!
 ```
@@ -63,12 +63,12 @@ Hello Adam!
 {% endraw %}
 ```
 
-<p class="code-label">결과</p>
+<p class="code-label">출력</p>
 ```text
 {{ "/my/fancy/url" | append: ".html" }}
 ```
 
-하나의 출력문 내에서 여러 필터가 사용될 수 있고, 왼쪽부터 오른쪽으로 적용됩니다.
+하나의 출력문 내부에서 여러 필터가 사용될 수 있고, 왼쪽부터 오른쪽으로 적용됩니다.
 
 <p class="code-label">입력</p>
 ```liquid
@@ -77,7 +77,7 @@ Hello Adam!
 {% endraw %}
 ```
 
-<p class="code-label">결과</p>
+<p class="code-label">출력</p>
 ```text
 {{ "adam!" | capitalize | prepend: "Hello " }}
 ```
