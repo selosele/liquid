@@ -1,50 +1,50 @@
 ---
-title: Operators
-description: Using operators to perform calculations in the Liquid template language.
+title: 연산자
+description: 연산자를 사용하여 Liquid 템플릿 언어로 계산을 수행할 수 있음.
 ---
 
-Liquid includes many logical and comparison operators.
+Liquid는 많은 논리/비교 연산자를 갖고 있습니다.
 
-## Basic operators
+## 기초 연산자
 
 <table>
   <tbody>
     <tr>
       <td><code>==</code></td>
-      <td>equals</td>
+      <td>동등</td>
     </tr>
     <tr>
       <td><code>!=</code></td>
-      <td>does not equal</td>
+      <td>동등하지 않음</td>
     </tr>
     <tr>
       <td><code>&gt;</code></td>
-      <td>greater than</td>
+      <td>초과</td>
     </tr>
     <tr>
       <td><code>&lt;</code></td>
-      <td>less than</td>
+      <td>미만</td>
     </tr>
     <tr>
       <td><code>&gt;=</code></td>
-      <td>greater than or equal to</td>
+      <td>이상</td>
     </tr>
     <tr>
       <td><code>&lt;=</code></td>
-      <td>less than or equal to</td>
+      <td>이하</td>
     </tr>
     <tr>
       <td><code>or</code></td>
-      <td>logical or</td>
+      <td>또는</td>
     </tr>
     <tr>
       <td><code>and</code></td>
-      <td>logical and</td>
+      <td>그리고</td>
     </tr>
   </tbody>
 </table>
 
-For example:
+예시:
 
 ```liquid
 {% raw %}
@@ -54,7 +54,7 @@ For example:
 {% endraw %}
 ```
 
-You can use multiple operators in a tag:
+태그 내에 다중 연산자를 사용할 수도 있습니다:
 
 ```liquid
 {% raw %}
@@ -66,7 +66,7 @@ You can use multiple operators in a tag:
 
 ## contains
 
-`contains` checks for the presence of a substring inside a string.
+`contains`은 문자열 내에 특정 문자열이 있는지 검사합니다.
 
 ```liquid
 {% raw %}
@@ -76,7 +76,7 @@ You can use multiple operators in a tag:
 {% endraw %}
 ```
 
-`contains` can also check for the presence of a string in an array of strings.
+문자열 배열 내에 특정 문자열이 있는지 검사할 수도 있습니다.
 
 ```liquid
 {% raw %}
@@ -86,7 +86,7 @@ You can use multiple operators in a tag:
 {% endraw %}
 ```
 
-`contains` can only search strings. You cannot use it to check for an object in an array of objects.
+오직 문자열만 찾습니다. 위의 코드처럼 객체 배열 내에 특정 객체가 있는지 검사할 수는 없습니다.
 
 ## Order of operations
 
