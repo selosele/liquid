@@ -5,7 +5,7 @@ description: 연산자를 사용하여 Liquid 템플릿 언어로 계산을 수�
 
 Liquid는 많은 논리/비교 연산자를 갖고 있습니다.
 
-## 기초 연산자
+## 기본적인 연산자
 
 <table>
   <tbody>
@@ -54,7 +54,7 @@ Liquid는 많은 논리/비교 연산자를 갖고 있습니다.
 {% endraw %}
 ```
 
-태그 내에 다중 연산자를 사용할 수도 있습니다:
+태그 내에 여러 개의 연산자를 사용할 수도 있습니다:
 
 ```liquid
 {% raw %}
@@ -71,7 +71,7 @@ Liquid는 많은 논리/비교 연산자를 갖고 있습니다.
 ```liquid
 {% raw %}
 {% if product.title contains "Pack" %}
-  This product's title contains the word Pack.
+  이 product의 title에는 Pack이라는 단어가 포함되어 있습니다.
 {% endif %}
 {% endraw %}
 ```
@@ -81,21 +81,21 @@ Liquid는 많은 논리/비교 연산자를 갖고 있습니다.
 ```liquid
 {% raw %}
 {% if product.tags contains "Hello" %}
-  This product has been tagged with "Hello".
+  이 제품의 tags는 "Hello"라는 이름을 갖고 있습니다.
 {% endif %}
 {% endraw %}
 ```
 
-오직 문자열만 찾습니다. 위의 코드처럼 객체 배열 내에 특정 객체가 있는지 검사할 수는 없습니다.
+오직 문자열만 찾습니다. 객체 배열 내에 특정 객체가 있는지 검사할 수는 없습니다.
 
-## Order of operations
+## 연산자의 순서
 
-In tags with more than one `and` or `or` operator, operators are checked in order *from right to left*. You cannot change the order of operations using parentheses — parentheses are invalid characters in Liquid and will prevent your tags from working.
+태그 내에 하나 이상의 `and` 또는 `or` 연산자가 포함된 경우, 연산자는 오른쪽에서 왼쪽 순서대로 검사됩니다. 소괄호로 순서를 변경할 수 없고, Liquid에서 유효하지 않은 기호인 소괄호는 코드를 작동할 수 없게 만듭니다.
 
 ```liquid
 {% raw %}
 {% if true or false and false %}
-  This evaluates to true, since the `and` condition is checked first.
+  `and` 조건이 먼저 검사되었으므로 true로 평가됩니다.
 {% endif %}
 {% endraw %}
 ```
@@ -103,7 +103,7 @@ In tags with more than one `and` or `or` operator, operators are checked in orde
 ```liquid
 {% raw %}
 {% if true and false and false or true %}
-  This evaluates to false, since the tags are checked like this:
+  태그는 다음과 같이 검사되었으므로 false로 평가됩니다:
 
   true and (false and (false or true))
   true and (false and true)
