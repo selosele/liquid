@@ -58,7 +58,7 @@ Liquid에서 거짓 값은 [`nil`]({{ "/basics/types/#nil" | prepend: site.baseu
 | 빈 문자열 |   •   |       |
 | 0         |   •   |       |
 | 정수      |   •   |       |
-| 소수점    |   •   |       |
+| 실수      |   •   |       |
 | 배열      |   •   |       |
 | 빈 배열   |   •   |       |
 | page      |   •   |       |
