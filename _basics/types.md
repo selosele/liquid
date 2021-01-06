@@ -10,9 +10,9 @@ Liquid의 객체는 다섯 가지 자료형 중 하나를 가질 수 있습니�
 - [Boolean](#boolean)
 - [Nil](#nil)
 - [배열](#배열)
-  - [Accessing items in arrays](#accessing-items-in-arrays)
-  - [Accessing specific items in arrays](#accessing-specific-items-in-arrays)
-  - [Initializing arrays](#initializing-arrays)
+  - [배열의 항목에 접근하기](#배열의-항목에-접근하기)
+  - [배열의 특정 항목에 접근하기](#배열의-특정-항목에-접근하기)
+  - [배열 초기화](#배열-초기화)
 
 [assign]({{ "/tags/variable/#assign" | prepend: site.baseurl }}) 또는 [capture]({{ "/tags/variable/#capture" | prepend: site.baseurl }}) 태그로 Liquid 변수를 선언할 수 있습니다.
 
@@ -39,7 +39,7 @@ Liquid의 객체는 다섯 가지 자료형 중 하나를 가질 수 있습니�
 
 ## Boolean
 
-Boolean은 `true` 또는 `false`입니다. boolean을 선언할 때 따옴표는 필요하지 않습니다.
+Boolean은 `true` 또는 `false`입니다. boolean을 선언할 때 따옴표는 필요 없습니다.
 
 ```liquid
 {% raw %}
@@ -80,11 +80,11 @@ The current user is
 
 ## 배열
 
-Arrays hold lists of variables of any type.
+배열은 모든 유형의 변수 목록을 보유합니다.
 
-### Accessing items in arrays
+### 배열의 항목에 접근하기
 
-To access all the items in an array, you can loop through each item in the array using an [iteration tag]({{ "/tags/iteration/" | prepend: site.baseurl }}).
+배열의 모든 항목에 접근하기 위해, [반복 태그]({{ "/tags/iteration/" | prepend: site.baseurl }})를 사용하여 배열의 각 항목을 반복할 수 있습니다.
 
 <p class="code-label">입력</p>
 ```liquid
@@ -101,9 +101,9 @@ To access all the items in an array, you can loop through each item in the array
 Tobi Laura Tetsuro Adam
 ```
 
-### Accessing specific items in arrays
+### 배열의 특정 항목에 접근하기
 
-You can use square bracket `[` `]` notation to access a specific item in an array. Array indexing starts at zero.
+배열의 특정 항목에 접근하기 위해 대괄호 `[` `]` 표기법을 사용합니다. 배열의 인덱싱은 0부터 시작합니다.
 
 <p class="code-label">입력</p>
 ```liquid
@@ -122,8 +122,8 @@ Laura
 Adam
 ```
 
-### Initializing arrays
+### 배열 초기화
 
-You cannot initialize arrays using only Liquid.
+Liquid만을 사용하여 배열을 초기화할 수 없습니다.
 
-You can, however, use the [split]({{ "/filters/split/" | prepend: site.baseurl }}) filter to break a string into an array of substrings.
+[split]({{ "/filters/split/" | prepend: site.baseurl }}) 필터로 문자열을 부분 문자열의 배열로 나눌 수는 있습니다.
