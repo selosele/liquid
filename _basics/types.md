@@ -1,19 +1,22 @@
 ---
-title: Types
-description: An overview of data types in the Liquid template language.
+title: 자료형
+description: Liquid 템플릿 언어의 자료형에 대한 개요
 ---
 
-Liquid objects can have one of five types:
+Liquid의 객체는 다섯 가지 자료형 중 하나를 가질 수 있습니다.
 
-- [String](#string)
-- [Number](#number)
+- [문자열](#문자열)
+- [숫자](#숫자)
 - [Boolean](#boolean)
 - [Nil](#nil)
-- [Array](#array)
+- [배열](#배열)
+  - [Accessing items in arrays](#accessing-items-in-arrays)
+  - [Accessing specific items in arrays](#accessing-specific-items-in-arrays)
+  - [Initializing arrays](#initializing-arrays)
 
-You can initialize Liquid variables with the [assign]({{ "/tags/variable/#assign" | prepend: site.baseurl }}) or [capture]({{ "/tags/variable/#capture" | prepend: site.baseurl }}) tags.
+[assign]({{ "/tags/variable/#assign" | prepend: site.baseurl }}) 또는 [capture]({{ "/tags/variable/#capture" | prepend: site.baseurl }}) 태그로 Liquid 변수를 선언할 수 있습니다.
 
-## String
+## 문자열
 
 Declare a string by wrapping a variable's value in single or double quotes:
 
@@ -23,7 +26,7 @@ Declare a string by wrapping a variable's value in single or double quotes:
 {% endraw %}
 ```
 
-## Number
+## 숫자
 
 Numbers include floats and integers:
 
@@ -63,19 +66,19 @@ In the following example, if the user does not exist (that is, `user` returns `n
 
 Tags or outputs that return `nil` will not print anything to the page.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 The current user is {{ user.name }}
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 The current user is
 ```
 
-## Array
+## 배열
 
 Arrays hold lists of variables of any type.
 
@@ -83,7 +86,7 @@ Arrays hold lists of variables of any type.
 
 To access all the items in an array, you can loop through each item in the array using an [iteration tag]({{ "/tags/iteration/" | prepend: site.baseurl }}).
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 <!-- if site.users = "Tobi", "Laura", "Tetsuro", "Adam" -->
@@ -93,7 +96,7 @@ To access all the items in an array, you can loop through each item in the array
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 Tobi Laura Tetsuro Adam
 ```
@@ -102,7 +105,7 @@ Tobi Laura Tetsuro Adam
 
 You can use square bracket `[` `]` notation to access a specific item in an array. Array indexing starts at zero.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 <!-- if site.users = "Tobi", "Laura", "Tetsuro", "Adam" -->
@@ -112,7 +115,7 @@ You can use square bracket `[` `]` notation to access a specific item in an arra
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 Tobi
 Laura
