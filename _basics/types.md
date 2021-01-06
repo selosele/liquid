@@ -18,7 +18,7 @@ Liquid의 객체는 다섯 가지 자료형 중 하나를 가질 수 있습니�
 
 ## 문자열
 
-Declare a string by wrapping a variable's value in single or double quotes:
+변수값을 작은 따옴표나 큰 따옴표로 감싸서 문자열을 선언할 수 있습니다.
 
 ```liquid
 {% raw %}
@@ -28,7 +28,7 @@ Declare a string by wrapping a variable's value in single or double quotes:
 
 ## 숫자
 
-Numbers include floats and integers:
+숫자는 실수와 정수를 포함합니다.
 
 ```liquid
 {% raw %}
@@ -39,7 +39,7 @@ Numbers include floats and integers:
 
 ## Boolean
 
-Booleans are either `true` or `false`. No quotations are necessary when declaring a boolean:
+Boolean은 `true` 또는 `false`입니다. boolean을 선언할 때 따옴표는 필요하지 않습니다.
 
 ```liquid
 {% raw %}
@@ -50,11 +50,11 @@ Booleans are either `true` or `false`. No quotations are necessary when declarin
 
 ## Nil
 
-Nil is a special empty value that is returned when Liquid code has no results. It is **not** a string with the characters "nil".
+Nil은 Liquid 코드에 결과가 없을 때 반환되는 특수한 빈 값입니다. "nil"이라는 문자열이 **아닙니다**.
 
-Nil is [treated as false]({{ "/basics/truthy-and-falsy/#falsy" | prepend: site.baseurl }}) in the conditions of `if` blocks and other Liquid tags that check the truthfulness of a statement.
+조건의 참을 검사하는 Liquid 태그와 `if`절 내에서 [false로 취급됩니다.]({{ "/basics/truthy-and-falsy/#거짓" | prepend: site.baseurl }})
 
-In the following example, if the user does not exist (that is, `user` returns `nil`), Liquid will not print the greeting:
+다음 예시에서, user가 존재하지 않을 경우(즉, `user`가 `nil`을 반환) Liquid는 문자열을 출력하지 않습니다:
 
 ```liquid
 {% raw %}
@@ -64,7 +64,7 @@ In the following example, if the user does not exist (that is, `user` returns `n
 {% endraw %}
 ```
 
-Tags or outputs that return `nil` will not print anything to the page.
+`nil`을 반환하는 태그나 결과는 페이지에 아무 것도 출력하지 않습니다.
 
 <p class="code-label">입력</p>
 ```liquid
