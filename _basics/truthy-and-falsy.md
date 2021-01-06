@@ -25,9 +25,9 @@ Liquid에서 `nil`과 `false`를 제외한 모든 값은 참입니다.
 {% endraw %}
 ```
 
-[Strings]({{ "/basics/types/#string" | prepend: site.baseurl }}), even when empty, are truthy. The example below will result in empty HTML tags if `settings.fp_heading` is empty:
+[문자열]({{ "/basics/types/#문자열" | prepend: site.baseurl }})은 비어 있어도 참입니다. 다음 예시에서는 `settings.fp_heading`이 비어 있으면 빈 HTML 태그가 생성됩니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% if settings.fp_heading %}
@@ -36,30 +36,30 @@ Liquid에서 `nil`과 `false`를 제외한 모든 값은 참입니다.
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```html
 <h1></h1>
 ```
 
 ## 거짓
 
-The falsy values in Liquid are [`nil`]({{ "/basics/types/#nil" | prepend: site.baseurl }}) and [`false`]({{ "/basics/types/#boolean" | prepend: site.baseurl }}).
+Liquid에서 거짓 값은 [`nil`]({{ "/basics/types/#nil" | prepend: site.baseurl }})과 [`false`]({{ "/basics/types/#boolean" | prepend: site.baseurl }})입니다.
 
 ## 요약
 
-The table below summarizes what is truthy or falsy in Liquid.
+다음 표에는 Liquid의 참과 거짓에 대해 요약이 되어 있습니다.
 
-|               | truthy        | falsy         |
-| ------------- |:-------------:|:-------------:|
-| true          | •             |               |
-| false         |               | •             |
-| nil           |               | •             |
-| string        | •             |               |
-| empty string  | •             |               |
-| 0             | •             |               |
-| integer       | •             |               |
-| float         | •             |               |
-| array         | •             |               |
-| empty array   | •             |               |
-| page          | •             |               |
-| EmptyDrop     | •             |               |
+|           |  참   | 거짓  |
+| --------- | :---: | :---: |
+| true      |   •   |       |
+| false     |       |   •   |
+| nil       |       |   •   |
+| 문자열    |   •   |       |
+| 빈 문자열 |   •   |       |
+| 0         |   •   |       |
+| 정수      |   •   |       |
+| 소수점    |   •   |       |
+| 배열      |   •   |       |
+| 빈 배열   |   •   |       |
+| page      |   •   |       |
+| EmptyDrop |   •   |       |
