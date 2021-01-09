@@ -1,5 +1,5 @@
 title: Liquid 템플릿 언어
-description: Liquid is a template language and accompanying rendering engine. It is built for security, so is perfect for rendering custom templates from your users.
+description: Liquid는 렌더링 엔진과 함께 제공되는 템플릿 언어입니다. 보안을 위해 구축되었으므로 사용자 커스텀 템플릿 렌더링에 적합합니다.
 
 # Build settings
 baseurl:                /liquid # the subpath of your site, e.g. /blog/

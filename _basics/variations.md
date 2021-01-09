@@ -1,11 +1,11 @@
 ---
-title: Variations of Liquid
-description: An overview of the different installations of Liquid and how Liquid can change depending on where you're using it.
+title: Liquid의 변종
+description: Liquid의 여러 종류 및 사용 환경에 따라 Liquid가 어떻게 변할 수 있는지에 대한 개요
 ---
 
-Liquid is a flexible, safe language, and is used in many different environments. Liquid was created for use in [Shopify](https://www.shopify.com) stores, and is also used extensively on [Jekyll](https://jekyllrb.com) websites. Over time, both Shopify and Jekyll have added their own objects, tags, and filters to Liquid. The most popular versions of Liquid that exist are **Liquid**, **Shopify Liquid**, and **Jekyll Liquid**.
+Liquid는 수많은 환경에서 사용되는 유동적이고 안전한 언어입니다. [Shopify](https://www.shopify.com){:target="_blank" rel="noopener noreferrer"} 상점에서 사용하기 위해 만들어졌고, [Jekyll](https://jekyllrb.com){:target="_blank" rel="noopener noreferrer"} 웹사이트에서도 광범위하게 사용됩니다. 시간이 흐르면서, Shopify와 Jekyll은 Liquid에 자신들만의 객체와 태그, 필터를 추가했습니다. 가장 인기 있는 버전은 **Liquid**, **Shopify Liquid**, **Jekyll Liquid** 입니다.
 
-This site documents the latest version of **Liquid** including betas and release candidates — that is, Liquid as it exists outside of Shopify and Jekyll. If you download the Liquid repository or install it as a [gem](https://rubygems.org/gems/liquid), you will get access to whatever objects, tags, and filters are in the version of Liquid that you chose.
+이 사이트는 베타 및 출시 후보를 포함하는 **Liquid** 최신 버전, 즉 Shopify와 Jekyll 버전이 아닌 Liquid를 문서화합니다. Liquid repository를 다운로드하거나 [gem](https://rubygems.org/gems/liquid){:target="_blank" rel="noopener noreferrer"}으로 설치하면, 선택한 Liquid 버전에 있는 모든 객체, 태그, 필터에 접근할 수 있습니다.
 
 ## Shopify
 
