@@ -15,7 +15,7 @@ Liquid Shopify 버전은 [Shopify 도움말 센터](https://help.shopify.com/the
 
 ## Jekyll
 
-[Jekyll](https://jekyllrb.com){:target="_blank"}은 정적 사이트 생성기이자, 템플릿과 콘텐츠 파일을 병합하여 웹사이트를 만드는 명령줄 도구입니다. Jekyll은 Liquid를 템플릿 언어로 사용하며, 소수의 객체, 태그, 필터를 추가했습니다. 여기에는 콘텐츠 페이지를 표현하는 객체와 콘텐츠 스니펫을 인클루드하기 위한 태그, 문자열과 URL을 조작하기 위한 필터가 포함됩니다.
+[Jekyll](https://jekyllrb.com){:target="_blank"}은 정적 사이트 생성기이자, 템플릿과 콘텐츠 파일을 병합하여 웹사이트를 만드는 명령줄 도구입니다. Jekyll은 Liquid를 템플릿 언어로 사용하며, 소수의 객체, 태그, 필터를 추가했습니다. 여기에는 콘텐츠 페이지를 표현하는 객체와 재사용 가능한 콘텐츠를 인클루드하기 위한 태그, 문자열과 URL을 조작하기 위한 필터가 포함됩니다.
 
 Jekyll also powers [GitHub Pages](https://pages.github.com/), a web hosting service that lets you push a Jekyll installation to a GitHub repository and have the resulting website published. This website is built using GitHub Pages.
 
