@@ -1,13 +1,11 @@
 ---
-title: Comment
-description: An overview of comments tags in the Liquid template language.
+title: 주석
+description: Liquid 템플릿 언어의 주석 태그에 대한 개요
 ---
 
-Allows you to leave un-rendered code inside a Liquid template. Any text within
-the opening and closing `comment` blocks will not be printed, and any Liquid code
-within will not be executed.
+렌더링되지 않은 코드를 Liquid 템플릿 내에 그대로 둘 수 있습니다. `comment` 블록의 여는 부분과 닫는 부분 내부에 포함된 텍스트는 출력되지 않으며, 내부에 포함된 어느 Liquid 코드도 실행되지 않습니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 Anything you put between {% comment %} and {% endcomment %} tags
@@ -15,7 +13,7 @@ is turned into a comment.
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```liquid
 Anything you put between {% comment %} and {% endcomment %} tags
 is turned into a comment.
