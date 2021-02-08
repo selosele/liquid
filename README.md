@@ -6,3 +6,7 @@
 2. `liquid-gh-pages` 폴더로 이동하거나 `gh-pages` branch를 checkout 하십시오.
 3. `bundle exec jekyll serve` 명령어를 실행하십시오.
 4. 브라우저에서 `http://127.0.0.1:4000/liquid/` 주소를 여십시오.
+
+## 기타
+
+* [영문 Repository](https://github.com/Shopify/liquid/tree/gh-pages)
