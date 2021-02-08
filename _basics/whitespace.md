@@ -1,13 +1,13 @@
 ---
-title: Whitespace control
-description: An overview of controlling whitespace between code in the Liquid template language.
+title: 공백 제어
+description: Liquid 템플릿 언어의 코드 간 공백 제어에 대한 개요
 ---
 
-In Liquid, you can include a hyphen in your tag syntax `{% raw %}{{-{% endraw %}`, `{% raw %}-}}{% endraw %}`, `{% raw %}{%-{% endraw %}`, and `{% raw %}-%}{% endraw %}` to strip whitespace from the left or right side of a rendered tag.
+Liquid 태그에 붙임표(hyphen) `{% raw %}{{-{% endraw %}`, `{% raw %}-}}{% endraw %}`, `{% raw %}{%-{% endraw %}`, and `{% raw %}-%}{% endraw %}`를 추가하여 렌더링된 태그의 왼쪽이나 오른쪽 공백을 제거할 수 있습니다.
 
-Normally, even if it doesn't print text, any line of Liquid in your template will still print a blank line in your rendered HTML:
+일반적으로 텍스트를 표출하지 않더라도 렌더링된 HTML에서는 빈 줄이 표출됩니다:
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% assign my_variable = "tomato" %}
@@ -15,17 +15,17 @@ Normally, even if it doesn't print text, any line of Liquid in your template wil
 {% endraw %}
 ```
 
-Notice the blank line before "tomato" in the rendered template:
+렌더링된 템플릿의 "tomato" 직전에 빈 줄이 보일 겁니다.
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 {% assign my_variable = "tomato" %}
 {{ my_variable }}
 ```
 
-By including hyphens in your `assign` tag, you can strip the generated whitespace from the rendered template:
+붙임표를 `assign` 태그에 포함하여 렌더링된 템플릿에서 공백을 제거할 수 있습니다:
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {%- assign my_variable = "tomato" -%}
@@ -33,14 +33,14 @@ By including hyphens in your `assign` tag, you can strip the generated whitespac
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 tomato
 ```
 
-If you don't want any of your tags to print whitespace, as a general rule you can add hyphens to both sides of all your tags (`{% raw %}{%-{% endraw %}` and `{% raw %}-%}{% endraw %}`):
+모든 공백의 표출을 원하지 않으면 모든 태그의 양쪽에 붙임표(`{% raw %}{%-{% endraw %}` and `{% raw %}-%}{% endraw %}`)를 추가합니다:
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% assign username = "John G. Chalmers-Smith" %}
@@ -52,7 +52,7 @@ If you don't want any of your tags to print whitespace, as a general rule you ca
 {% endraw %}
 ```
 
-<p class="code-label">Output without whitespace control</p>
+<p class="code-label">공백 제어 없는 출력</p>
 ```text
 {% assign username = "John G. Chalmers-Smith" %}
 {% if username and username.size > 10 %}
@@ -62,7 +62,7 @@ If you don't want any of your tags to print whitespace, as a general rule you ca
 {% endif %}
 ```
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {%- assign username = "John G. Chalmers-Smith" -%}
@@ -74,7 +74,7 @@ If you don't want any of your tags to print whitespace, as a general rule you ca
 {% endraw %}
 ```
 
-<p class="code-label">Output with whitespace control</p>
+<p class="code-label">공백이 제거된 출력</p>
 ```text
 Wow, John G. Chalmers-Smith, you have a long name!
 ```
