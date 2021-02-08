@@ -15,7 +15,7 @@ Liquid 태그에 붙임표(hyphen) `{% raw %}{{-{% endraw %}`, `{% raw %}-}}{% e
 {% endraw %}
 ```
 
-렌더링된 템플릿의 "tomato" 직전에 빈 줄이 보일 겁니다.
+렌더링된 템플릿의 "tomato" 직전에 빈 줄이 보일 겁니다:
 
 <p class="code-label">출력</p>
 ```text
