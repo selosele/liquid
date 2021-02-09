@@ -14,14 +14,14 @@ description: Liquid 템플릿 언어에서 변수를 생성하는 태그에 대�
 {% raw %}
 {% assign my_variable = false %}
 {% if my_variable != true %}
-  This statement is valid.
+  이 표현은 유효하지 않습니다.
 {% endif %}
 {% endraw %}
 ```
 
 <p class="code-label">출력</p>
 ```text
-This statement is valid.
+이 표현은 유효하지 않습니다.
 ```
 
 변수에 문자열을 저장하려면 변수값을 따옴표 `"`로 감쌉니다.
@@ -41,7 +41,7 @@ bar
 
 ## capture
 
-Captures the string inside of the opening and closing tags and assigns it to a variable. Variables created through `capture` are strings.
+여는 태그와 닫는 태그 내부의 문자열을 변수에 할당합니다. `capture`로 생성된 변수는 문자열입니다.
 
 <p class="code-label">입력</p>
 ```liquid
@@ -56,7 +56,7 @@ Captures the string inside of the opening and closing tags and assigns it to a v
 I am being captured.
 ```
 
-Using `capture`, you can create complex strings using other variables created with `assign`:
+`capture`와 `assign`로 생성된 변수들을 사용하여 복잡한 문자열을 생성할 수 있습니다:
 
 <p class="code-label">입력</p>
 ```liquid
@@ -79,7 +79,7 @@ I am 35 and my favourite food is pizza.
 
 ## increment
 
-Creates a new number variable, and increases its value by one every time it is called. The initial value is 0.
+새 숫자 변수를 생성하고, 호출할 때마다 값을 증가시킵니다. 초기값은 0입니다.
 
 <p class="code-label">입력</p>
 ```liquid
@@ -97,9 +97,9 @@ Creates a new number variable, and increases its value by one every time it is c
 2
 ```
 
-Variables created through the `increment` tag are independent from variables created through `assign` or `capture`.
+`increment` 태그로 생성된 변수는 `assign`, `capture` 태그로 생성된 변수는 독립적입니다.
 
-In the example below, a variable named "var" is created through `assign`. The `increment` tag is then used several times on a variable with the same name. Note that the `increment` tag does not affect the value of "var" that was created through `assign`.
+다음 예제에서 `assign` 태그로 "var"라는 이름의 변수가 생성되었고, 그다음 같은 이름의 `increment` 태그가 여러 번 사용되었습니다. `increment` 태그는 `assign` 태그로 생성된 "var"라는 이름의 값에 영향을 미치지 않습니다.
 
 <p class="code-label">입력</p>
 ```liquid
@@ -122,7 +122,7 @@ In the example below, a variable named "var" is created through `assign`. The `i
 
 ## decrement
 
-Creates a new number variable, and decreases its value by one every time it is called. The initial value is -1.
+새 숫자 변수를 생성하고, 호출할 때마다 값을 감소시킵니다. 초기값은 -1입니다.
 
 <p class="code-label">입력</p>
 ```liquid
@@ -140,4 +140,4 @@ Creates a new number variable, and decreases its value by one every time it is c
 -3
 ```
 
-Like [increment](#increment), variables declared inside `decrement` are independent from variables created through `assign` or `capture`.
+[increment](#increment)처럼 `decrement` 태그 내부에 선언된 변수는 `assign`, `capture` 태그로 생성된 변수와 독립적입니다.
