@@ -52,7 +52,7 @@ Boolean은 `true` 또는 `false`입니다. boolean을 선언할 때 따옴표는
 
 Nil은 Liquid 코드에 결과가 없을 때 반환되는 특수한 빈 값입니다. "nil"이라는 문자열이 **아닙니다**.
 
-조건의 참을 검사하는 Liquid 태그와 `if`절 내에서 [false로 취급됩니다.]({{ "/basics/truthy-and-falsy/#거짓" | prepend: site.baseurl }})
+조건의 참을 검사하는 Liquid 태그와 `if` 블록 내에서 [false로 취급됩니다.]({{ "/basics/truthy-and-falsy/#거짓" | prepend: site.baseurl }})
 
 다음 예시에서, user가 존재하지 않을 경우(즉, `user`가 `nil`을 반환) Liquid는 문자열을 출력하지 않습니다:
 
