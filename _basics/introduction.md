@@ -47,7 +47,7 @@ Hello Adam!
 태그는 세 가지 유형으로 분류됩니다.
 
 - [제어 흐름]({{ "/tags/control-flow/" | prepend: site.baseurl }})
-- [반복문]({{ "/tags/iteration/" | prepend: site.baseurl }})
+- [반복]({{ "/tags/iteration/" | prepend: site.baseurl }})
 - [변수 할당]({{ "/tags/variable/" | prepend: site.baseurl }})
 
 태그 유형에 대한 자세한 내용은 각 섹션에서 확인할 수 있습니다. 
