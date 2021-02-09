@@ -1,15 +1,15 @@
 ---
-title: Variable
-description: An overview of tags for creating variables in the Liquid template language.
+title: 변수
+description: Liquid 템플릿 언어에서 변수를 생성하는 태그에 대한 개요
 ---
 
-Variable tags create new Liquid variables.
+변수 태그는 새 Liquid 변수를 생성합니다.
 
 ## assign
 
-Creates a new variable.
+새 변수를 생성합니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% assign my_variable = false %}
@@ -19,14 +19,14 @@ Creates a new variable.
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 This statement is valid.
 ```
 
-Wrap a variable value in quotations `"` to save it as a string.
+변수에 문자열을 저장하려면 변수값을 따옴표 `"`로 감쌉니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% assign foo = "bar" %}
@@ -34,7 +34,7 @@ Wrap a variable value in quotations `"` to save it as a string.
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 bar
 ```
@@ -43,7 +43,7 @@ bar
 
 Captures the string inside of the opening and closing tags and assigns it to a variable. Variables created through `capture` are strings.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% capture my_variable %}I am being captured.{% endcapture %}
@@ -51,14 +51,14 @@ Captures the string inside of the opening and closing tags and assigns it to a v
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 I am being captured.
 ```
 
 Using `capture`, you can create complex strings using other variables created with `assign`:
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% assign favorite_food = "pizza" %}
@@ -72,7 +72,7 @@ I am {{ age }} and my favorite food is {{ favorite_food }}.
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 I am 35 and my favourite food is pizza.
 ```
@@ -81,7 +81,7 @@ I am 35 and my favourite food is pizza.
 
 Creates a new number variable, and increases its value by one every time it is called. The initial value is 0.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% increment my_counter %}
@@ -90,7 +90,7 @@ Creates a new number variable, and increases its value by one every time it is c
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 0
 1
@@ -101,7 +101,7 @@ Variables created through the `increment` tag are independent from variables cre
 
 In the example below, a variable named "var" is created through `assign`. The `increment` tag is then used several times on a variable with the same name. Note that the `increment` tag does not affect the value of "var" that was created through `assign`.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% assign var = 10 %}
@@ -112,7 +112,7 @@ In the example below, a variable named "var" is created through `assign`. The `i
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 0
 1
@@ -124,7 +124,7 @@ In the example below, a variable named "var" is created through `assign`. The `i
 
 Creates a new number variable, and decreases its value by one every time it is called. The initial value is -1.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% decrement variable %}
@@ -133,7 +133,7 @@ Creates a new number variable, and decreases its value by one every time it is c
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 -1
 -2
