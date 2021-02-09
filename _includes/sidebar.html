@@ -3,7 +3,7 @@
     {% if page.home %}
       Liquid
     {% else %}
-      <a href="{{ "/" | relative_url }}">Liquid</a>
+      <a href="{{ '/' | relative_url }}">Liquid</a>
     {% endif %}
   </header>
 
@@ -12,7 +12,7 @@
   <nav class="sidebar__nav">
     <div class="sidebar__nav-interior">
       {%- for section in sections -%}
-        <h3 class="section__header" id="{{ section }}">{{ section | capitalize }}</h3>
+        <h3 class="section__header" id="{{ section }}">{{ site.data.ui-text.sections_title[section] }}</h3>
 
         <ul class="section__links">
         {%- for item in site[section] -%}
