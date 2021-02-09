@@ -1,30 +1,30 @@
 ---
 title: at_most
-description: Liquid filter that limits a number to a maximum value.
+description: 숫자의 최대값을 제한하는 Liquid 필터
 ---
 
-Limits a number to a maximum value.
+숫자의 최대값을 제한합니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {{ 4 | at_most: 5 }}
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 4
 ```
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {{ 4 | at_most: 3 }}
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 3
 ```
