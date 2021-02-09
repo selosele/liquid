@@ -14,14 +14,14 @@ description: Liquid 템플릿 언어에서 변수를 생성하는 태그에 대�
 {% raw %}
 {% assign my_variable = false %}
 {% if my_variable != true %}
-  이 표현은 유효하지 않습니다.
+  이 표현은 유효합니다.
 {% endif %}
 {% endraw %}
 ```
 
 <p class="code-label">출력</p>
 ```text
-이 표현은 유효하지 않습니다.
+이 표현은 유효합니다.
 ```
 
 변수에 문자열을 저장하려면 변수값을 따옴표 `"`로 감쌉니다.
