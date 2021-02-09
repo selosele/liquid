@@ -8,13 +8,13 @@ description: Liquid 템플릿 언어의 주석 태그에 대한 개요
 <p class="code-label">입력</p>
 ```liquid
 {% raw %}
-Anything you put between {% comment %} and {% endcomment %} tags
-is turned into a comment.
+무엇이든 {% comment %} 태그 {% endcomment %} 내에 둘 수 있고,
+주석으로 변합니다.
 {% endraw %}
 ```
 
 <p class="code-label">출력</p>
 ```liquid
-Anything you put between {% comment %} and {% endcomment %} tags
-is turned into a comment.
+무엇이든 {% comment %} 태그 {% endcomment %} 내에 둘 수 있고,
+주석으로 변합니다.
 ```
