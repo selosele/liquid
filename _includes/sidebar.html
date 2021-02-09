@@ -12,7 +12,7 @@
   <nav class="sidebar__nav">
     <div class="sidebar__nav-interior">
       {%- for section in sections -%}
-        <h3 class="section__header" id="{{ section }}">{{ site.data.ui-text.sections_title[section] }}</h3>
+        <h3 class="section__header" id="{{ section }}">{% cycle "기초", "태그", "필터" %}</h3>
 
         <ul class="section__links">
         {%- for item in site[section] -%}
