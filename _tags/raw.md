@@ -9,13 +9,13 @@ Raw는 태그 처리를 임시로 비활성화합니다. 충돌이 있는 문법
 <pre class="highlight">
 <code>{% raw %}
 &#123;&#37; raw &#37;&#125;
-  In Handlebars, {{ this }} will be HTML-escaped, but
-  {{{ that }}} will not.
+  Handlebars에서 {{ 이것 }}은 HTML 이스케이핑 처리되지만 
+  {{{ 이것 }}}은 처리되지 않습니다.
 &#123;&#37; endraw &#37;&#125;
 {% endraw %}</code>
 </pre>
 
 <p class="code-label">출력</p>
 ```text
-{% raw %}In Handlebars, {{ this }} will be HTML-escaped, but {{{ that }}} will not.{% endraw %}
+{% raw %}Handlebars에서 {{ 이것 }}은 HTML 이스케이핑 처리되지만 {{{ 이것 }}}은 처리되지 않습니다.{% endraw %}
 ```
