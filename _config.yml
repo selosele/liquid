@@ -3,7 +3,7 @@ description: Liquid는 렌더링 엔진과 함께 제공되는 템플릿 언어�
 
 # Build settings
 baseurl:                /liquid # the subpath of your site, e.g. /blog/
-url:                    https://selosele.github.io/liquid/ # the base hostname & protocol for your site
+url:                    https://selosele.github.io/liquid # the base hostname & protocol for your site
 permalink:              pretty
 exclude:
   - README.md
