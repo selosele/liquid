@@ -1,10 +1,9 @@
 ---
 title: Raw
-description: An overview of raw tags in the Liquid template language.
+description: Liquid 템플릿 언어의 raw 태그에 대한 개요
 ---
 
-Raw temporarily disables tag processing. This is useful for generating content
-(eg, Mustache, Handlebars) which uses conflicting syntax.
+Raw는 태그 처리를 임시로 비활성화합니다. 충돌이 있는 문법을 사용하는 콘텐츠(예: Mustache, Handlebars)를 생성하는 데 유용합니다.
 
 <p class="code-label">Input</p>
 <pre class="highlight">
