@@ -5,7 +5,7 @@ description: 숫자를 다른 숫자로 나누는 Liquid 필터
 
 숫자를 다른 숫자로 나눕니다.
 
-약수가 정수일 경우 결과 값은 가장 가까운 정수(즉, [floor]({{ "/filters/floor/" | prepend: site.baseurl }}))로 반내림됩니다.
+약수가 정수일 경우 결과 값은 가장 가까운 정수(즉, [floor]({{ "/filters/floor/" | prepend: site.baseurl }}))로 반올림됩니다.
 
 <p class="code-label">입력</p>
 ```liquid
@@ -31,7 +31,7 @@ description: 숫자를 다른 숫자로 나누는 Liquid 필터
 {{ 5 | divided_by: 3 }}
 ```
 
-### 반내림 제어
+### 반올림 제어
 
 `divided_by`는 약수와 동일한 유형의 결과를 냅니다 — 즉, 정수로 나누면 결과 값도 정수이고 실수(소수점)로 나누면 결과 값도 실수입니다.
 
