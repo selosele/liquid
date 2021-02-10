@@ -3,7 +3,7 @@ title: date
 description: 날짜를 출력, 구성하는 Liquid 필터
 ---
 
-타임스탬프를 다른 날짜 형식으로 변환합니다. 구문의 형식은 [`strftime`](http://strftime.net){:target="_blank"}와 동일하며 Ruby의 [`Time.parse`](https://ruby-doc.org/stdlib/libdoc/time/rdoc/Time.html#method-c-parse)와 동일한 형식을 사용합니다.
+타임스탬프를 다른 날짜 형식으로 변환합니다. 구문의 형식은 [`strftime`](http://strftime.net){:target="_blank"}와 동일하며 Ruby의 [`Time.parse`](https://ruby-doc.org/stdlib/libdoc/time/rdoc/Time.html#method-c-parse){:target="_blank"}와 동일한 형식을 사용합니다.
 
 <p class="code-label">입력</p>
 ```liquid
