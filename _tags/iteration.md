@@ -153,7 +153,7 @@ The collection is empty.
 
 ### reversed
 
-반복문의 순서를 뒤바꿉니다. 철자가 비슷한 `reverse` 필터와 다릅니다.
+반복문의 순서를 반전시킵니다. 철자가 비슷한 `reverse` 필터와 다릅니다.
 
 <p class="code-label">입력</p>
 ```liquid
