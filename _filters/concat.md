@@ -1,11 +1,11 @@
 ---
 title: concat
-description: Liquid filter that concatenates arrays.
+description: 배열을 합치는 Liquid 필터
 ---
 
-Concatenates (joins together) multiple arrays. The resulting array contains all the items from the input arrays.
+다수의 배열을 하나로 연결(결합)합니다. 결과 배열에는 입력된 모든 배열 항목이 포함됩니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% assign fruits = "apples, oranges, peaches" | split: ", " %}
@@ -19,7 +19,7 @@ Concatenates (joins together) multiple arrays. The resulting array contains all 
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 - apples
 - oranges
@@ -29,9 +29,9 @@ Concatenates (joins together) multiple arrays. The resulting array contains all 
 - potatoes
 ```
 
-You can string together `concat` filters to join more than two arrays:
+`concat` 필터로 두 개 이상의 배열을 연결할 수도 있습니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% assign furniture = "chairs, tables, shelves" | split: ", " %}
@@ -44,7 +44,7 @@ You can string together `concat` filters to join more than two arrays:
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 - apples
 - oranges
