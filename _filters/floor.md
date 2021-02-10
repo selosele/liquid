@@ -1,9 +1,9 @@
 ---
 title: floor
-description: 가장 가까운 정수로 반내림한 수치값을 반환하는 Liquid 필터
+description: 가장 가까운 정수로 버림한 수치값을 반환하는 Liquid 필터
 ---
 
-숫자를 가장 가까운 정수로 반내림합니다. Liquid는 필터가 적용되기 전의 숫자를 변환하려 합니다.
+숫자를 가장 가까운 정수로 버림합니다. Liquid는 필터가 적용되기 전의 숫자를 변환하려 합니다.
 
 <p class="code-label">입력</p>
 ```liquid
