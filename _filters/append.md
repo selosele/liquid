@@ -17,7 +17,7 @@ description: 문자열에 다른 문자열을 덧붙이는 Liquid 필터
 {{ "/my/fancy/url" | append: ".html" }}
 ```
 
-`append`는 변수와 함께 사용할 수도 있습니다:
+`append`는 변수와 함께 사용될 수도 있습니다:
 
 <p class="code-label">입력</p>
 ```liquid
