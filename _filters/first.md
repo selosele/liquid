@@ -33,7 +33,7 @@ description: 배열의 첫 번째 항목을 반환하는 Liquid 필터
 {{ my_array.first }}
 ```
 
-태그 내부에서 필터를 사용하려면 `first`를 점 표기법과 함께 사용합니다:
+태그 내부에서 `first`를 사용하려면 점 표기법과 함께 사용합니다:
 
 ```liquid
 {% raw %}
