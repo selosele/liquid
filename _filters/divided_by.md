@@ -1,75 +1,75 @@
 ---
 title: divided_by
-description: Liquid filter that divides a number by another number.
+description: 숫자를 다른 숫자로 나누는 Liquid 필터
 ---
 
-Divides a number by another number.
+숫자를 다른 숫자로 나눕니다.
 
-The result is rounded down to the nearest integer (that is, the [floor]({{ "/filters/floor/" | prepend: site.baseurl }})) if the divisor is an integer.
+약수가 정수일 경우 결과 값은 가장 가까운 정수(즉, [floor]({{ "/filters/floor/" | prepend: site.baseurl }}))로 반내림됩니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {{ 16 | divided_by: 4 }}
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 {{ 16 | divided_by: 4 }}
 ```
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {{ 5 | divided_by: 3 }}
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 {{ 5 | divided_by: 3 }}
 ```
 
-### Controlling rounding
+### 반내림 제어
 
-`divided_by` produces a result of the same type as the divisor — that is, if you divide by an integer, the result will be an integer. If you divide by a float (a number with a decimal in it), the result will be a float.
+`divided_by`는 약수와 동일한 유형의 결과를 냅니다 — 즉, 정수로 나누면 결과 값도 정수이고 실수(소수점)로 나누면 결과 값도 실수입니다.
 
-For example, here the divisor is an integer:
+다음 예시에서 약수는 정수입니다:
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {{ 20 | divided_by: 7 }}
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 {{ 20 | divided_by: 7 }}
 ```
 
-Here it is a float:
+실수일 경우:
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {{ 20 | divided_by: 7.0 }}
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 {{ 20 | divided_by: 7.0 }}
 ```
 
-### Changing variable types
+### 변수 유형 변경
 
-You might want to use a variable as a divisor, in which case you can't simply add `.0` to convert it to a float. In these cases, you can `assign` a version of your variable converted to a float using the `times` filter.
+변수를 약수로 사용하고 싶은 경우, 실수로 변환하기 위해 `.0`를 추가할 수 없습니다. 이러한 경우 `times` 필터를 사용하여 실수로 변환된 변수 형태를 할당할 수 있습니다.
 
-In this example, we're dividing by a variable that contains an integer, so we get an integer:
+다음 예시에서 정수를 담고 있는 변수를 나누었고 결과 값은 정수입니다:
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% assign my_integer = 7 %}
@@ -77,15 +77,15 @@ In this example, we're dividing by a variable that contains an integer, so we ge
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 {% assign my_integer = 7 %}
 {{ 20 | divided_by: my_integer }}
 ```
 
-Here, we [multiply]({{ "/filters/times/" | prepend: site.baseurl }}) the variable by `1.0` to get a float, then divide by the float instead:
+실수를 얻기 위해 변수값에 `1.0`을 곱한 다음 나누었습니다:
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% assign my_integer = 7 %}
@@ -94,7 +94,7 @@ Here, we [multiply]({{ "/filters/times/" | prepend: site.baseurl }}) the variabl
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 {% assign my_integer = 7 %}
 {% assign my_float = my_integer | times: 1.0 %}
