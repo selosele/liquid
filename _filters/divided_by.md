@@ -83,7 +83,7 @@ description: 숫자를 다른 숫자로 나누는 Liquid 필터
 {{ 20 | divided_by: my_integer }}
 ```
 
-실수를 얻기 위해 변수값에 `1.0`을 곱한 다음 나누었습니다:
+실수를 얻기 위해 변수값에 `1.0`을 [곱한]({{ "/filters/times/" | prepend: site.baseurl }}) 다음 나누었습니다:
 
 <p class="code-label">입력</p>
 ```liquid
