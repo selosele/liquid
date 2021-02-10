@@ -1,11 +1,11 @@
 ---
 title: newline_to_br
-description: Liquid filter that converts newlines in a string to HTML <br /> tags.
+description: 문자열의 줄바꿈을 HTML <br /> 태그로 변환하는 Liquid 필터
 ---
 
-Replaces every newline (`\n`) in a string with an HTML line break (`<br />`).
+문자열의 모든 줄바꿈(`\n`)을 HTML 줄바꿈 `<br />` 태그로 변환합니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% capture string_with_newlines %}
@@ -17,7 +17,7 @@ there
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```html
 {% capture string_with_newlines %}
 Hello
