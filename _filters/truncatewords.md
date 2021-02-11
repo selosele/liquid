@@ -1,50 +1,50 @@
 ---
 title: truncatewords
-description: Liquid filter that truncates a string to a given number of words.
+description: 지정된 숫자만큼 단어를 줄이는 Liquid 필터
 ---
 
-Shortens a string down to the number of words passed as an argument. If the specified number of words is less than the number of words in the string, an ellipsis (...) is appended to the string.
+인수에 전달된 숫자만큼 문자열의 단어 수를 줄입니다. 지정된 단어 수가 문자열의 단어 수보다 작으면 생략 부호 (...)가 문자열에 추가됩니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {{ "Ground control to Major Tom." | truncatewords: 3 }}
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 {{ "Ground control to Major Tom." | truncatewords: 3 }}
 ```
 
-### Custom ellipsis
+### 생략 부호 커스텀
 
-`truncatewords` takes an optional second argument that specifies the sequence of characters to be appended to the truncated string. By default this is an ellipsis (...), but you can specify a different sequence.
+`truncatewords`는 선택적으로 사용 가능한 두 번째 인수를 사용할 수 있으며, 해당 인수는 줄어든 문자열에 추가할 문자열 시퀀스를 지정합니다. 기본값은 생략 부호 (...)이지만 다른 시퀀스를 지정할 수 있습니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {{ "Ground control to Major Tom." | truncatewords: 3, "--" }}
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 {{ "Ground control to Major Tom." | truncatewords: 3, "--" }}
 ```
 
-### No ellipsis
+### 생략 부호 미사용
 
-You can avoid showing trailing characters by passing a blank string as the second argument:
+두 번째 인수에 빈 문자열을 전달해서 후행 문자를 표시하지 않게 할 수 있습니다:
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {{ "Ground control to Major Tom." | truncatewords: 3, "" }}
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 {{ "Ground control to Major Tom." | truncatewords: 3, "" }}
 ```
