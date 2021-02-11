@@ -1,11 +1,11 @@
 ---
 title: uniq
-description: Liquid filter that removes duplicate items from an array.
+description: 배열에서 중복되는 항목을 제거하는 Liquid 필터
 ---
 
-Removes any duplicate elements in an array.
+배열에서 중복되는 모든 요소를 제거합니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% assign my_array = "ants, bugs, bees, bugs, ants" | split: ", " %}
@@ -14,7 +14,7 @@ Removes any duplicate elements in an array.
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 {% assign my_array = "ants, bugs, bees, bugs, ants" | split: ", " %}
 
