@@ -13,3 +13,11 @@ Liquid는 [Shopify](https://www.shopify.com){:target="_blank"}가 제작, Ruby�
 ## 사용처
 
 {% include home-users-grid.html %}
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>[1] 역주) 온라인 스토어에서 사용하고자 제작된 언어라 고객 대면(customer-facing)이라는 단어가 사용된 것으로 보임.<a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
