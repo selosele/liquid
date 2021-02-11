@@ -1,9 +1,9 @@
 ---
 title: minus
-description: 한 숫자에서 특정 숫자를 빼는 Liquid 필터
+description: 한 숫자에서 다른 숫자를 빼는 Liquid 필터
 ---
 
-한 숫자에서 특정 숫자를 뺍니다.
+한 숫자에서 다른 숫자를 뺍니다.
 
 <p class="code-label">입력</p>
 ```liquid
