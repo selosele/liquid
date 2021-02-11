@@ -7,7 +7,7 @@ description: Liquid 템플릿 언어의 반복 또는 &quot;루프&quot; 태그�
 
 ## for
 
-코드 블록을 반복 실행합니다. `for`문 내부에서 사용할 수 있는 모든 속성 목록은 [forloop (object)](https://help.shopify.com/themes/liquid/objects/for-loops)에서 확인하십시오.
+코드 블록을 반복 실행합니다. `for`문 내부에서 사용할 수 있는 모든 속성 목록은 [forloop (object)](https://help.shopify.com/themes/liquid/objects/for-loops){:target="_blank"}에서 확인하십시오.
 
 <p class="code-label">입력</p>
 ```liquid
