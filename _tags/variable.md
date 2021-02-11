@@ -99,7 +99,7 @@ I am 35 and my favourite food is pizza.
 
 `increment` 태그로 생성된 변수는 `assign`, `capture` 태그로 생성된 변수와 독립적입니다.
 
-다음 예제에서 `assign` 태그로 "var"라는 이름의 변수가 생성되었고, 그다음 같은 이름의 `increment` 태그가 여러 번 사용되었습니다. `increment` 태그는 `assign` 태그로 생성된 "var"라는 이름의 값에 영향을 미치지 않습니다.
+다음 예제에서 `assign` 태그로 "var"라는 이름의 변수가 생성되었고, 그다음 같은 이름의 `increment` 태그가 여러 번 사용되었습니다. `increment` 태그는 `assign` 태그로 생성된 "var"라는 이름의 값에 영향을 주지 않습니다.
 
 <p class="code-label">입력</p>
 ```liquid
