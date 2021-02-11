@@ -1,9 +1,9 @@
 ---
 title: newline_to_br
-description: 문자열의 줄바꿈을 HTML <br /> 태그로 변환하는 Liquid 필터
+description: 문자열의 줄 바꿈을 HTML <br /> 태그로 변환하는 Liquid 필터
 ---
 
-문자열의 모든 줄바꿈(`\n`)을 HTML 줄바꿈 `<br />` 태그로 변환합니다.
+문자열의 모든 줄 바꿈(`\n`)을 HTML 줄 바꿈 `<br />` 태그로 변환합니다.
 
 <p class="code-label">입력</p>
 ```liquid
