@@ -1,58 +1,58 @@
 ---
 title: slice
-description: Liquid filter that returns a substring from a given position in a string.
+description: 문자열에서 특정 위치에 있는 문자를 제거하는 Liquid 필터
 ---
 
-Returns a substring of 1 character beginning at the index specified by the first argument. An optional second argument specifies the length of the substring to be returned.
+첫 번째 인수에 전달된 지정 인덱스에서 시작하는 1개의 문자를 반환합니다. 선택적으로 사용 가능한 두 번째 인수는 반환될 문자의 길이를 지정합니다.
 
-String indices are numbered starting from 0.
+문자열의 인덱스는 0부터 번호가 매겨집니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {{ "Liquid" | slice: 0 }}
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 {{ "Liquid" | slice: 0 }}
 ```
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {{ "Liquid" | slice: 2 }}
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 {{ "Liquid" | slice: 2 }}
 ```
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {{ "Liquid" | slice: 2, 5 }}
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 {{ "Liquid" | slice: 2, 5 }}
 ```
 
-If the first argument is a negative number, the indices are counted from the end of the string:
+첫 번째 인수가 음수일 경우 인덱스는 문자열의 끝부터 시작합니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {{ "Liquid" | slice: -3, 2 }}
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">출력</p>
 ```text
 {{ "Liquid" | slice: -3, 2 }}
 ```
