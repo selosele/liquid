@@ -189,3 +189,49 @@ table {
 p {
   line-height: 1.8;
 }
+
+/* footnote */
+sup {
+  margin: 0 2px;
+  line-height: 1;
+  vertical-align: super;
+}
+
+.footnote {
+  color: $color-slate-2;
+  font-size: 18px;
+
+  &:before {
+     content: "[";
+  }
+
+  &:after {
+     content: "]";
+  }
+}
+
+.footnotes {
+  margin-top: 40px;
+  padding-top: 4px;
+  border-top: 1px solid $color-white-2;
+
+  ol {
+    margin-left: 0;
+    padding-left: 0;
+
+    li {
+      list-style: none;
+
+      p {
+          margin-top: 0;
+          margin-bottom: 0;
+          font-size: 14px;
+          color: $color-slate-2;
+      }
+    }
+  }
+
+  .reversefootnote {
+    color: $color-slate-3;
+  }
+}
