@@ -1,9 +1,9 @@
 ---
 title: remove_first
-description: 문자열의 첫 번째 특정 문자열을 제거하는 Liquid 필터
+description: 문자열의 첫 번째 특정 문자를 제거하는 Liquid 필터
 ---
 
-문자열의 첫 번째 특정 문자열만 제거합니다.
+문자열의 첫 번째 특정 문자만 제거합니다.
 
 <p class="code-label">입력</p>
 ```liquid
