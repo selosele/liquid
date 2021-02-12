@@ -200,6 +200,7 @@ sup {
 .footnote {
   color: $color-slate-2;
   font-size: 18px;
+  text-decoration: none;
 
   &:before {
      content: "[";
